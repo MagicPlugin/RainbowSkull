@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="RainbowSkull-23.0.3.6">
+    <output-path>$PROJECT_DIR$/out/artifacts/RainbowSkull_23_0_3_6</output-path>
+    <root id="archive" name="RainbowSkull-23.0.3.6.jar">
+      <element id="module-output" name="RainbowSkull" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/LightFall光落/DeveloperTools/json-20231013.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

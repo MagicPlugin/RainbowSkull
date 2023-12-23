@@ -1,0 +1,37 @@
+name: RainbowSkull
+main: com.magicpowered.rainbowskull.RainbowSkull
+version: 23.0.3.5
+author: JLING
+api-version: 1.13
+depend:
+  - NBTAPI
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  rs:
+    description: <info/give/check/behead/reload/help>
+    usage: /<command> <info/give/reload/check/behead/help>
+    aliases:
+      - rainbowskull
+      - rainbows
+      - rskull
+      - rs
+    tab-completions: com.magicpowered.rainbowskull.CommandListener
+
+permissions:
+  rainbowskull.check:
+    description: Check if an entity is supported.
+    default: true
+  rainbowskull.behead:
+    description: Switch behead mode.
+    default: true
+  rainbowskull.world:
+    description: View settings from various worlds
+    default: true
+  rainbowskull.give:
+    description: Give a new MagicHead to player.
+    default: op
+  rainbowskull.reload:
+    description: Allows reloading of the MagicMobs.
+    default: op

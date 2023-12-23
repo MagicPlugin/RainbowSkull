@@ -1,0 +1,1106 @@
+# %rainbowskull_killed_time% 的时间格式
+# 年: yyyy
+# 月: MM
+# 日: dd
+# 时: hh
+# 分: mm
+# 秒: ss
+# 您可以在上述占位符的两两之间使用任意符号
+Time: "yyyy-MM-dd"
+
+# 所有玩家头颅遵循此配置规则
+Player:
+  probability: 1
+  displayName: "&d+ &6[ &c$l&l>>> &e[%rainbowskull_killedPlayer%] &c&l<<< &6] &d+"
+  lore:
+    - " "
+    - " &7► &e&l[灵魂之首]"
+    - " "
+    - " &7► &f杀手: %rainbowskull_killed_player%"
+    - " &7► &f地点: %rainbowskull_killed_world%"
+    - " &7► &f时间: %rainbowskull_killed_time%"
+
+# 所有自定义头颅在此配置
+Skulls:
+  # 自定义头颅编号。若该头颅会被生物灵魂斩首掉落，则该编号应为生物类型
+  BAT:
+    # 斩首该生物的基础概率，百分制， 1 = 1%， 100 = 100%
+    # 在这个概率的基础上，加上权限组、附魔和世界的概率，为最终概率。若超过 100%，插件会自动按照 100% 计算
+    probability: 1
+    # 关联头颅，被添加到这里的头颅，将在当前生物被成功斩首后尝试掉落。掉落的概率为 被添加头颅 的 probability
+    relate:
+      - BATMAN
+    # 头颅的名字，若该头颅会被生物灵魂斩首掉落，则该生物的名字使用此配置值
+    name: "&f蝙蝠"
+    # 头颅方块的名字
+    displayName: "&d+ &6[ &6&l蝙蝠 &6] &d+"
+    # 头颅方块的描述
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    # 头颅的皮肤值，在 https://minecraft-heads.com 找到更多头颅
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwNDM0MzQyNTIsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzBjNTZjOTNlY2Q0MmFiNWQ1MTkyNDUyOGU1YTFjYjdiMWE4YmQ1N2I0NDM1ZmY5MmQxNTJkODRkNDNjN2E0ZCJ9fX0="
+
+  BLAZE:
+    probability: 1
+    name: "烈焰人"
+    displayName: "&d+ &6[ &6&l烈焰人 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODExMDgzMTk4NjEsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzU2NTg2ODlkMmQ2MWE3YTc1YjRmNWM0MTkyZTg5OWVjYWMxNmEwOGZmNDE2ZDk5NWY1YzEwYzc3YWEifX19"
+
+  CAVE_SPIDER:
+    probability: 1
+    name: "洞穴蜘蛛"
+    displayName: "&d+ &6[ &6&l洞穴蜘蛛 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTAyOTg5MzQsInByb2ZpbGVJZCI6ImRhNzQ2NWVkMjljYjRkZTA5MzRkOTIwMTc0NDkxMzU1IiwicHJvZmlsZU5hbWUiOiJJc2F5bGEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzE1YzdlOTQzYjk4M2VmZmE4YmI4NzA3MjYwMjBiMWI4NWIyZGMzOWRlZTVlZTY4NTI5NWNlNGM4Nzk0ZWUyIn19fQ=="
+
+  CHICKEN:
+    probability: 1
+    name: "鸡"
+    displayName: "&d+ &6[ &6&l鸡 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2EzNTgyY2U0ODg5MzMzZGFkMzI5ZTRlMjQzNzJhMDNhNWRhYTJjMzQyODBjNTYyNTZhZjUyODNlZGIwNDNmOCJ9fX0="
+
+  COW:
+    probability: 1
+    name: "牛"
+    displayName: "&d+ &6[ &6&l牛 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWQ2YzZlZGE5NDJmN2Y1ZjcxYzMxNjFjNzMwNmY0YWVkMzA3ZDgyODk1ZjlkMmIwN2FiNDUyNTcxOGVkYzUifX19"
+
+  CREEPER:
+    probability: 1
+    name: "爬行者"
+    displayName: "&d+ &6[ &6&l爬行者 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTAyMjU0OTYsInByb2ZpbGVJZCI6ImM5YjFmYTJiNjhkMjQ3N2U4NzgxYTYwNjMwMWIzMmFiIiwicHJvZmlsZU5hbWUiOiJBbnRob255OTE5MCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk1ZWY4MzYzODlhZjk5MzE1OGFiYTI3ZmYzN2I2NTY3MTg1ZjdhNzIxY2E5MGZkZmViOTM3YTdjYjU3NDcifX19"
+
+  DONKEY:
+    probability: 1
+    name: "驴"
+    displayName: "&d+ &6[ &6&l驴 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODA0NDgzMTgzMDgsInByb2ZpbGVJZCI6IjU0NjRkZDY3NWE0NjQyMzk4NjJmYjI3YjQ5NDQ0NDJjIiwicHJvZmlsZU5hbWUiOiJEb25rZXkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2Q4NDlkNDRlMjdiNTgxNWUzMzM1OGFjMGNmOGJhMWQ1ZmRmZDdkMTJkOTMyMWVmYjAxZWU3NjFjY2M1NzI0NyJ9fX0="
+
+  ELDER_GUARDIAN:
+    probability: 1
+    name: "远古守卫者"
+    displayName: "&d+ &6[ &6&l远古守卫者 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTkyMDg5NjE4NDM1YTBlZjYzZTk1ZWU5NWE5MmI4MzA3M2Y4YzMzZmE3N2RjNTM2NTE5OWJhZDMzYjYyNTYifX19"
+
+  ENDERMAN:
+    probability: 1
+    name: "末影人"
+    displayName: "&d+ &6[ &6&l末影人 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZjMGIzNmQ1M2ZmZjY5YTQ5YzdkNmYzOTMyZjJiMGZlOTQ4ZTAzMjIyNmQ1ZTgwNDVlYzU4NDA4YTM2ZTk1MSJ9fX0="
+
+  ENDERMITE:
+    probability: 1
+    name: "末影螨"
+    displayName: "&d+ &6[ &6&l末影螨 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0Nzk1NjYyNTcxMDUsInByb2ZpbGVJZCI6IjNkZjZhMDUwYjkzZTRkOGI4ZmE0YjUyMjhhNzk3Yjg0IiwicHJvZmlsZU5hbWUiOiJNSEZfRW5kZXJtaXRlIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9lOGM2Y2I4Y2VhYWQ1YTJhZDVjYzlhNjdiY2U2ZDViZGJmNWNiYjdlMzEyOTU1Y2NmOWYxNjI1MDkzNTViMSJ9fX0="
+
+  ENDER_DRAGON:
+    probability: 1
+    name: "末影龙"
+    displayName: "&d+ &6[ &6&l末影龙 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTFjZDZkMmQwM2YxMzVlN2M2YjVkNmNkYWUxYjNhNjg3NDNkYjRlYjc0OWZhZjczNDFlOWZiMzQ3YWEyODNiIn19fQ=="
+
+  EVOKER:
+    probability: 1
+    name: "唤魔者"
+    displayName: "&d+ &6[ &6&l唤魔者 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwMzc0MTI4MTYsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRiNjJiNmU4ZTg3OWU5NmM2NGJjNzdjYWYzM2Y4N2E0OGU4YTFiYWQ3NjM1NjliZmU4ZDQzYzlhMWQ4MjIifX19"
+
+  GHAST:
+    probability: 1
+    name: "恶魂"
+    displayName: "&d+ &6[ &6&l恶魂 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTI4OTc0MzMsInByb2ZpbGVJZCI6ImRhNzQ2NWVkMjljYjRkZTA5MzRkOTIwMTc0NDkxMzU1IiwicHJvZmlsZU5hbWUiOiJJc2F5bGEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2ZmZDY4ODZmZjUxMzViYWNkYzdhMjFjOWRiZDI0MmMwZGNhNWIyOWJiYTIyYmFjY2E0MjdhZjA1NDM1ZGU5In19fQ=="
+
+  GIANT:
+    probability: 1
+    name: "巨人"
+    displayName: "&d+ &6[ &6&l巨人 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNmYjRlNWRiOTdmNDc5YzY2YTQyYmJkOGE3ZDc4MWRhZjIwMWE4ZGRhZjc3YWZjZjRhZWY4Nzc3OWFhOGI0In19fQ=="
+
+  GUARDIAN:
+    probability: 1
+    name: "守卫者"
+    displayName: "&d+ &6[ &6&l守卫者 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODAwNzQ5NzMwNzUsInByb2ZpbGVJZCI6IjNlMjZiMDk3MWFjZDRjNmQ5MzVjNmFkYjE1YjYyMDNhIiwicHJvZmlsZU5hbWUiOiJOYWhlbGUiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzkzMmMyNDUyNGM4MmFiM2IzZTU3YzIwNTJjNTMzZjEzZGQ4YzBiZWI4YmRkMDYzNjliYjI1NTRkYTg2YzEyMyJ9fX0="
+
+  HORSE:
+    probability: 1
+    name: "马"
+    displayName: "&d+ &6[ &6&l马 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwMzQwODAwMzcsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjQxYWU5NmY3NDU1M2I0OWFiYzI5NmZkNDg0N2VhZTQ5OTM5NWM5MDgzNDE2ZjU5YmM3YzIxMDQ0NjhhMSJ9fX0="
+
+  HUSK:
+    probability: 1
+    name: "尸壳"
+    displayName: "&d+ &6[ &6&l尸壳 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwMTM5OTY1OTksInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGVlMjgyMjk1YjJhN2VhNWVkOWUyNDk3NjRjMzhjYTE4OTEyYWUwMjdkY2VhOWRkZDZkZDAzZDVhNmJmZTgwIn19fQ=="
+
+  ILLUSIONER:
+    probability: 1
+    name: "幻术师"
+    displayName: "&d+ &6[ &6&l幻术师 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0OTQ3NzM4NzUxODQsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Y0MjM1MjI1NDcyNWNiNGJiYzEyNTAxMzRmODEwZjdmZTA0ZDVkNWRlMzcyNGMyNWZkZGVlYTZmMjEifX19"
+
+  IRON_GOLEM:
+    probability: 1
+    name: "铁傀儡"
+    displayName: "&d+ &6[ &6&l铁傀儡 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTI5MzQ4MDksInByb2ZpbGVJZCI6IjNlMjZiMDk3MWFjZDRjNmQ5MzVjNmFkYjE1YjYyMDNhIiwicHJvZmlsZU5hbWUiOiJOYWhlbGUiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FlZWYzYTIzZWE1ZWNhYmUyZjFmZmIzN2I2MzNlZmU2NmQxZTVhN2Y2MmI1MDk4ZTY3MzQ2NGVhM2QxNzNlNSJ9fX0="
+
+  LLAMA:
+    probability: 1
+    name: "羊驼"
+    displayName: "&d+ &6[ &6&l羊驼 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwMzk4MDA3OTMsInByb2ZpbGVJZCI6ImIwZDRiMjhiYzFkNzQ4ODlhZjBlODY2MWNlZTk2YWFiIiwicHJvZmlsZU5hbWUiOiJJbnZlbnRpdmVHYW1lcyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmY5MTQ2YzRmMzJmYjg4OTk4Nzk3NjVkYzVjYWMwYjczNmQ5MTg1ZWZjYzIxZGYyMWM5YjNhODZhZDA3YiJ9fX0="
+
+  MAGMA_CUBE:
+    probability: 1
+    name: "岩浆怪"
+    displayName: "&d+ &6[ &6&l岩浆怪 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTI5NjExNTUsInByb2ZpbGVJZCI6IjQzYTgzNzNkNjQyOTQ1MTBhOWFhYjMwZjViM2NlYmIzIiwicHJvZmlsZU5hbWUiOiJTa3VsbENsaWVudFNraW42Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8xNWZmNjhlYzRmM2MxYWNkNGU5Njk3YTI0NTM2YjZhZjQ0ZWJjNzE2N2M0MzQxYWE0YmNjODA0MzM5ZjQxNzUwIn19fQ=="
+
+  MULE:
+    probability: 1
+    name: "骡"
+    displayName: "&d+ &6[ &6&l骡 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwMzQ3MTIwMzAsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI5ZjQwNjc4NWY5ZjJmOWM0N2VhZmFjN2MzOTRkMGVjZGYyZTI2ZTM2OTE1Zjk5MWZjMWIyZTk2ZGQ3NyJ9fX0="
+
+  MUSHROOM_COW:
+    probability: 1
+    name: "哞菇"
+    displayName: "&d+ &6[ &6&l哞菇 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTI5ODg0NDQsInByb2ZpbGVJZCI6ImIwZDRiMjhiYzFkNzQ4ODlhZjBlODY2MWNlZTk2YWFiIiwicHJvZmlsZU5hbWUiOiJJbnZlbnRpdmVHYW1lcyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGRkNGY1YmY3Y2JhNzhmNjEyYzMyN2U1YmI3ZmRlNGIzODM0OTI1MDQ3ZWQxOTQ3ODQ4NTQ1Yzk4MjNkMjgxNiJ9fX0="
+
+  OCELOT:
+    probability: 1
+    name: "豹猫"
+    displayName: "&d+ &6[ &6&l豹猫 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTMwMTgyNzEsInByb2ZpbGVJZCI6ImM5YjFmYTJiNjhkMjQ3N2U4NzgxYTYwNjMwMWIzMmFiIiwicHJvZmlsZU5hbWUiOiJBbnRob255OTE5MCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjI2NmFmZjU1NTE2NWFjMTY5YWU3ZjZkNGE2ZjE4ZTQ5NDQzYjY2ODgyZWRhZGE2M2ZmMWNkMDkzMTBkN2QzIn19fQ=="
+
+  PIG:
+    probability: 1
+    name: "猪"
+    displayName: "&d+ &6[ &6&l猪 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTMwNTE5MTcsInByb2ZpbGVJZCI6IjY0MjQ4NTljNTk0NDQwNzdiZTllMzJiMTY0MjdjMTIwIiwicHJvZmlsZU5hbWUiOiIyMDkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIxYTEzZGE3NTU4ZmViZjc4NjFkYjA0MTM4NGUxNmM4MTU2ZDBjNWExN2RhZmMyYjlkNjc4ZThmZCJ9fX0="
+
+  # 新版 1.16+ 为僵尸猪灵
+  PIG_ZOMBIE:
+    probability: 1
+    name: "僵尸猪人"
+    displayName: "&d+ &6[ &6&l僵尸猪人 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTMwNzUwNTIsInByb2ZpbGVJZCI6ImRhNzQ2NWVkMjljYjRkZTA5MzRkOTIwMTc0NDkxMzU1IiwicHJvZmlsZU5hbWUiOiJJc2F5bGEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzE4YWViNWFjOTk5M2I0ZTFiM2YyMDQ0ZmI1ZjRjNmI4NTc2ODY0OTVjYzZhNmVhZTQyOGVkZDA0ZDI1Mjg5OCJ9fX0="
+
+  POLAR_BEAR:
+    probability: 1
+    name: "北极熊"
+    displayName: "&d+ &6[ &6&l北极熊 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwMjMwNzE0OTIsInByb2ZpbGVJZCI6IjgyNGNmNDIzY2JhMDQ4NjQ4NDBiMTliNmRhM2VjMjc2IiwicHJvZmlsZU5hbWUiOiJFbmRlcnJfIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yMDZmZGRkOTE4YTkyZmY2MjJiOGU1YjU5NWFkNWIxYTJkNjhhYzZmZDJjNjI4NzA0MjBlYjI2ZjUifX19"
+
+  RABBIT:
+    probability: 1
+    name: "兔子"
+    displayName: "&d+ &6[ &6&l兔子 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmM4ODFhNTgxYWI3ZmIxOTAwOGFkZjUzOTcyN2U2YjJlMjBkN2UyNTZjNjJmYzNlYThhZjExMmJiZTU2YmYwZCJ9fX0="
+
+  SHEEP:
+    probability: 1
+    name: 羊
+    displayName: "&d+ &6[ &6&l羊 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTMwOTkxMjcsInByb2ZpbGVJZCI6IjNlMjZiMDk3MWFjZDRjNmQ5MzVjNmFkYjE1YjYyMDNhIiwicHJvZmlsZU5hbWUiOiJOYWhlbGUiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzdiMzhhZDQ2YTkxNTJkNjY5ODI0ZmI2MzJlZGIyZWYyOGRkNTc5ZTE1ZDRmOGYzNzNmYmZiYjgwNDQ1MyJ9fX0="
+
+  SHULKER:
+    probability: 1
+    name: "潜影贝"
+    displayName: "&d+ &6[ &6&l潜影贝 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwNDYxNzY3MDgsInByb2ZpbGVJZCI6IjE2MGY3ZDhhYzZiMDRmYzg4OTI1OWU5ZDZjOWM1N2Q1IiwicHJvZmlsZU5hbWUiOiJNSEZfU2h1bGtlciIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjFkMzUzNGQyMWZlODQ5OTI2MmRlODdhZmZiZWFjNGQyNWZmZGUzNWM4YmRjYTA2OWU2MWUxNzg3ZmYyZiJ9fX0="
+
+  SILVERFISH:
+    probability: 1
+    name: "蠹虫"
+    displayName: "&d+ &6[ &6&l蠹虫 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE5MWRhYjgzOTFhZjVmZGE1NGFjZDJjMGIxOGZiZDgxOWI4NjVlMWE4ZjFkNjIzODEzZmE3NjFlOTI0NTQwIn19fQ=="
+
+  SKELETON:
+    probability: 1
+    name: "骷髅"
+    displayName: "&d+ &6[ &6&l骷髅 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTAwMTUxMTgsInByb2ZpbGVJZCI6IjQzYTgzNzNkNjQyOTQ1MTBhOWFhYjMwZjViM2NlYmIzIiwicHJvZmlsZU5hbWUiOiJTa3VsbENsaWVudFNraW42Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yZTViZTZhM2MwMTU5ZDJjMWYzYjFlNGUxZDgzODRiNmY3ZWJhYzk5M2Q1OGIxMGI5Zjg5ODljNzhhMjMyIn19fQ=="
+
+  SKELETON_HORSE:
+    probability: 1
+    name: "骷髅马"
+    displayName: "&d+ &6[ &6&l骷髅马 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwNDMwMTgwMDYsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRjOGRmMTBmYjYwYjY1ZjRiYzk0ZGVhNGZmZGExYTIzY2M0ZDk5N2I5Njc2ODNkM2RhOWYxNTdjZjc3In19fQ=="
+
+  SLIME:
+    probability: 1
+    displayName: "&d+ &6[ &6&l史莱姆 &6] &d+"
+    name: "史莱姆"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODExMDgyMDY3NDUsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmEyMWY1ZGIwYjZjZGJlOWMwMzBjNWVmYTBmZjQxM2VkYzJjOWU5NjQ2Y2YzMmExZDljOGVkZjNlYTE1YSJ9fX0="
+
+  SNOWMAN:
+    probability: 1
+    name: "雪傀儡"
+    displayName: "&d+ &6[ &6&l雪傀儡 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwNDQyMDc0NTYsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ1OTQ4ZDkzMDkxN2FlZTc2NzQxNDhhNmE1NWNlYjJhYTNmM2VjM2UxYTdmMTM2NjdmOTIxM2Y0NGRkY2FjIn19fQ=="
+
+  SPIDER:
+    probability: 1
+    name: "蜘蛛"
+    displayName: "&d+ &6[ &6&l蜘蛛 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTMxODQ5MjksInByb2ZpbGVJZCI6ImIwZDRiMjhiYzFkNzQ4ODlhZjBlODY2MWNlZTk2YWFiIiwicHJvZmlsZU5hbWUiOiJJbnZlbnRpdmVHYW1lcyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNmZDRlOTZmMjY4OTQxOTBjYTJjOGUyMTUwODJmZTE5MmZmMTdiYmI0NjQzMzJmN2VjYmZmYzhhYjczMiJ9fX0="
+
+  SQUID:
+    probability: 1
+    name: "鱿鱼"
+    displayName: "&d+ &6[ &6&l鱿鱼 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTMyNTczMDgsInByb2ZpbGVJZCI6ImM5YjFmYTJiNjhkMjQ3N2U4NzgxYTYwNjMwMWIzMmFiIiwicHJvZmlsZU5hbWUiOiJBbnRob255OTE5MCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjYxMTVhYjQ0MjM4NTgwM2QzNjc2NjViY2JiMzg0NmZmZDY5ZTljZTJmNDlhMWVmNmRlMjU2ZGM2Yzk3MjllIn19fQ=="
+
+  STRAY:
+    probability: 1
+    name: "流浪者"
+    displayName: "&d+ &6[ &6&l流浪者 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjc4MGQxZjAyMTZlMjRlMmEzM2ZjYTQ3YjNlZjJjYmM0ZjM3Njg5ZGFkNTNmYWFmZDM0NDUxZDBkYmY4MTFmIn19fQ=="
+
+  VEX:
+    probability: 1
+    name: "恼鬼"
+    displayName: "&d+ &6[ &6&l恼鬼 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwMzk2MjM3NDQsInByb2ZpbGVJZCI6IjNlMjZiMDk3MWFjZDRjNmQ5MzVjNmFkYjE1YjYyMDNhIiwicHJvZmlsZU5hbWUiOiJOYWhlbGUiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzBlNjZmZTIwZjMxMWViM2RlY2M2NDIwYWQyODFmY2FmMWQ2NmZmOTNkNDZhYTlkNWVjMzlmMmExMWUwMTAifX19"
+
+  VILLAGER:
+    probability: 1
+    name: "村民"
+    displayName: "&d+ &6[ &6&l村民 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTMzMDYzOTcsInByb2ZpbGVJZCI6IjY0MjQ4NTljNTk0NDQwNzdiZTllMzJiMTY0MjdjMTIwIiwicHJvZmlsZU5hbWUiOiIyMDkiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2I3Yjg5YjVkZDgyZGQ1ZTBkZjYxYjlkMDVjNWQ1YTNhZWU5ZmMwZjQzMmY2MmJjNTJlNTJiZGJkNTliNDJmNiJ9fX0="
+
+  VINDICATOR:
+    probability: 1
+    name: "卫道士"
+    displayName: "&d+ &6[ &6&l卫道士 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwMzkzMjI1ODQsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDJiMzkxYjc2Y2ZmOTRiYTk1MmNhM2NkNWNiOWY2MjZhMjRkZGNlMDNhOGQzNTgyYWQxYTI2YTc1YjZjMzIifX19"
+
+  WITCH:
+    probability: 1
+    name: "女巫"
+    displayName: "&d+ &6[ &6&l女巫 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwMjg4NDg0MTAsInByb2ZpbGVJZCI6ImZlZjg1YzQ5MmZkZjQ3Zjg5MTMyNTUyMDQ2MjQzMjIzIiwicHJvZmlsZU5hbWUiOiJNSEZfV2l0Y2giLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzRlMzZjMTc0NWIxMWM2YjUzYWU1N2EzMjA4NjcxYTQ1OTVkOTk4ZDJhOWVmOGEyMzM4N2UyZWUzZGViYyJ9fX0="
+
+  WITHER:
+    probability: 1
+    name: "凋零"
+    displayName: "&d+ &6[ &6&l凋灵 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwNDc1OTIxMzAsInByb2ZpbGVJZCI6IjM5YWY2ODQ0NjgwOTRkMmY4YmE0N2U5MmQwODdiZTE4IiwicHJvZmlsZU5hbWUiOiJNSEZfV2l0aGVyIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9jZGY3NGUzMjNlZDQxNDM2OTY1ZjVjNTdkZGYyODE1ZDUzMzJmZTk5OWU2OGZiYjlkNmNmNWM4YmQ0MTM5ZiJ9fX0="
+
+  WITHER_SKELETON:
+    probability: 1
+    name: "凋零骷髅"
+    displayName: "&d+ &6[ &6&l凋灵骷髅 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTMzMzQ3NzAsInByb2ZpbGVJZCI6ImRhNzQ2NWVkMjljYjRkZTA5MzRkOTIwMTc0NDkxMzU1IiwicHJvZmlsZU5hbWUiOiJJc2F5bGEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIzM2I0MWZhNzljZDUzYTIzMGUyZGI5NDI4NjM4NDMxODNhNzA0MDQ1MzNiYmMwMWZhYjc0NDc2OWJjYiJ9fX0="
+
+  WOLF:
+    probability: 1
+    name: "狼"
+    displayName: "&d+ &6[ &6&l狼 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTA3MTMyNTgsInByb2ZpbGVJZCI6IjQzYTgzNzNkNjQyOTQ1MTBhOWFhYjMwZjViM2NlYmIzIiwicHJvZmlsZU5hbWUiOiJTa3VsbENsaWVudFNraW42Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yNzY4Y2JkNTIxY2IxODViMjc2NzJjZTQzMGZjNDg1MGQ3NTk1YzZlODc3OGUwNzI3MWM5NTc5ZWQxZjVhZmI1In19fQ=="
+
+  ZOMBIE:
+    probability: 1
+    name: "僵尸"
+    displayName: "&d+ &6[ &6&l僵尸 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0NjczMTAxMjg5MzAsInByb2ZpbGVJZCI6ImIwZDRiMjhiYzFkNzQ4ODlhZjBlODY2MWNlZTk2YWFiIiwicHJvZmlsZU5hbWUiOiJJbnZlbnRpdmVHYW1lcyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ=="
+
+  ZOMBIE_HORSE:
+    probability: 1
+    name: "僵尸马"
+    displayName: "&d+ &6[ &6&l僵尸马 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwMzQ1NDU0MzYsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWI1NGYyYmMyYjZmNTlhYmI4YzNmOWQ2YzNhMzE1NGUzZmVmZTIzOGYyYmFkNTkzZGIyZGU3ZmEzYTQifX19"
+
+  ZOMBIE_VILLAGER:
+    probability: 1
+    name: "僵尸村民"
+    displayName: "&d+ &6[ &6&l僵尸村民 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0ODEwNDMyOTY4NTUsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODZkNTM4ZDg2NTdkYjU4YjhiMWE1YmUyMzkzMTExMmFhNzhiNTVmMWZhNWNiNzQwODM4YjVlMmNjMDg2OGVhNCJ9fX0="
+
+    # 1.12 或更高版本
+
+  PARROT:
+    probability: 1
+    name: "鹦鹉"
+    displayName: "&d+ &6[ &6&l鹦鹉 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE0OTQ3ODI5NjA4NjcsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzVhZmI4MTJiM2NiZjQxN2QxNTM3NTFiZjBkNzVjZmRmY2ZkYWRjMzI4ZGU4MmQ4N2EyOWViZGE3MmEyNGQ3NiJ9fX0="
+
+  # 1.13 或更高版本
+
+  DROWNED:
+    probability: 1
+    name: "溺尸"
+    displayName: "&d+ &6[ &6&l溺尸 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE1MzI2MTU4MjAyNjcsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmU2NjM0ZDFhNTg1ZjViM2IxMTNlNzY3Mjc3Y2QwM2Y4ODllMWQwODJlNDRmNmEyYjMzNWQ5N2QzMjFhNTYyNCJ9fX0="
+
+  PHANTOM:
+    probability: 1
+    name: "幻翼"
+    displayName: "&d+ &6[ &6&l幻翼 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE1MzI2MTY0OTgwNzMsInByb2ZpbGVJZCI6IjNjOWE4MjkyMGZhNzRlN2M4NDEzMmJjYjE1OTY4MjA0IiwicHJvZmlsZU5hbWUiOiJSb2NvbG9nbyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2U5NTE1M2VjMjMyODRiMjgzZjAwZDE5ZDI5NzU2ZjI0NDMxM2EwNjFiNzBhYzAzYjk3ZDIzNmVlNTdiZDk4MiJ9fX0="
+
+  DOLPHIN:
+    probability: 1
+    name: "海豚"
+    displayName: "&d+ &6[ &6&l海豚 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE1MzI2MTY1OTA1MDcsInByb2ZpbGVJZCI6IjIzZDE4YjNhN2E1NjQyM2E4NDZmZGJlNGVjYjJmNzJmIiwicHJvZmlsZU5hbWUiOiJHZW1pbml4UGxheXMiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU0NmZkMzRiMDZjNjFmNjhlOTRmMzU3ZjM4ZTYyZDMzNGUzMzllZGYyYjkzMGQyNjk1MTk3MTkyMWJiYjUyNjgifX19"
+
+  TURTLE:
+    probability: 1
+    name: "海龟"
+    displayName: "&d+ &6[ &6&l海龟 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTlkNjcxMjU4MmQ2MGEwMDU4ZTRmYmVlMGU4OWRkMDg5ZmJhYmI4MGYwN2U0YTA4NzQ5MDRjOTFiYzQ4ZjA4YSJ9fX0=="
+
+  TROPICAL_FISH:
+    probability: 1
+    name: "热带鱼"
+    displayName: "&d+ &6[ &6&l热带鱼 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE1MzI2MTY2ODI0NDUsInByb2ZpbGVJZCI6IjkxOGEwMjk1NTlkZDRjZTZiMTZmN2E1ZDUzZWZiNDEyIiwicHJvZmlsZU5hbWUiOiJCZWV2ZWxvcGVyIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kMDBjZWY0Yjc2ODMxNTM1MzJiYzQ4MjdhMTdjMjdhYjFhMTA1NTk4NTk3YTE1YTQ0YzRlNGYyNDY3MWMzZmZlIn19fQ=="
+
+  PUFFERFISH:
+    probability: 1
+    name: "河豚"
+    displayName: "&d+ &6[ &6&l河豚 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RlOTEwOTBmY2VjZjdmZmMyNmU5NGUwMzE3ZGQyYWI3YTliZmFjMDYyYTM4YzlhODI1ZTA2NWI5NDBkYWEwNiJ9fX0="
+
+  COD:
+    probability: 1
+    name: "鳕鱼"
+    displayName: "&d+ &6[ &6&l鳕鱼 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzg5MmQ3ZGQ2YWFkZjM1Zjg2ZGEyN2ZiNjNkYTRlZGRhMjExZGY5NmQyODI5ZjY5MTQ2MmE0ZmIxY2FiMCJ9fX0="
+
+  SALMON:
+    probability: 1
+    name: "鲑鱼"
+    displayName: "&d+ &6[ &6&l鲑鱼 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjc3MGQ5MTdkMWNjYzEyZjNhMWNmNzNmZTdkZThjNjU0OGY0YTg0MjA4NjkyM2M3YmI0NDQ2YmNjN2FhZWJmYSJ9fX0="
+
+  # 1.14 或更高版本
+
+  CAT:
+    probability: 1
+    name: "猫"
+    displayName: "&d+ &6[ &6&l猫 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzE2MzEyMDZiNDYxOTNlMWQxZjE5ODcxYzQzYjdmN2Q0MmM5ZmI4NDc4MWEwNDNiOTFhOWJkNmZjZjU0NTAyIn19fQ=="
+
+  FOX:
+    probability: 1
+    name: "狐狸"
+    displayName: "&d+ &6[ &6&l狐狸 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE1NTYyODM2Mjk0MTksInByb2ZpbGVJZCI6ImIwZDRiMjhiYzFkNzQ4ODlhZjBlODY2MWNlZTk2YWFiIiwicHJvZmlsZU5hbWUiOiJ4RmFpaUxlUiIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjAwYzQ2ZDIxZTY5ZGM5MTBhOWM1ODc4MjliY2JkYzEyNDc4NDJlZTdkNmQzZTQ5Y2M1Y2U2NTI5ZTI3MWI3ZSJ9fX0="
+
+  RAVAGER:
+    probability: 1
+    name: "劫掠兽"
+    displayName: "&d+ &6[ &6&l劫掠兽 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE1NTYyODQ3MTA1MjgsInByb2ZpbGVJZCI6IjgyYzYwNmM1YzY1MjRiNzk4YjkxYTEyZDNhNjE2OTc3IiwicHJvZmlsZU5hbWUiOiJOb3ROb3RvcmlvdXNOZW1vIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zOTFmYjY0YTA1ODYwMGY1YTU3OWNmMTEzZDBkZDZjYTFjMDZkMjg0Mzg5ZDQzZGJmZjQ1NzNiMjkxM2IzNTE0In19fQ=="
+
+  PANDA:
+    probability: 1
+    name: "熊猫"
+    displayName: "&d+ &6[ &6&l熊猫 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE1NTYyODM3NjQyNDUsInByb2ZpbGVJZCI6IjkxZmUxOTY4N2M5MDQ2NTZhYTFmYzA1OTg2ZGQzZmU3IiwicHJvZmlsZU5hbWUiOiJoaGphYnJpcyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjVkZWEzYTgyYjlmYWZjOGFmODllMjI5YzM1NzE5MzZjZjI2Njk2ZmEwYWViY2VlNTMwOWY4MTg4OTBmNjhmOCJ9fX0="
+
+  WANDERING_TRADER:
+    probability: 1
+    name: "流浪商人"
+    displayName: "&d+ &6[ &6&l流浪商人 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2FlYTJlODAzZjIyYmNhOWFhOTA5ODI2NGE5YTY2NDljODI1N2I4MTIyMmNjMDE2MDRiMjQ4MDQ1NmFkNzkyMiJ9fX0="
+
+  PILLAGER:
+    probability: 1
+    name: "掠夺者"
+    displayName: "&d+ &6[ &6&l掠夺者 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE1NTYyODQwMzYwNjAsInByb2ZpbGVJZCI6IjVkODgxNDRhMzhjYzRkZWVhODA3MzYwODc2YzIxYzU4IiwicHJvZmlsZU5hbWUiOiJSZW1WTiIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjM1NTBmODlhZWE4ODY2NTgwNGMyZmQxYjY2ODI5MzBjMjMyMzMxODRmZGMwNjA5OTEzMDU3MThlZDY2MDU5NyJ9fX0="
+
+  TRADER_LLAMA:
+    probability: 1
+    name: "行商羊驼"
+    displayName: "&d+ &6[ &6&l行商羊驼 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: " eyJ0aW1lc3RhbXAiOjE1NTc2MDA0NDkyNTYsInByb2ZpbGVJZCI6IjM4NjcwNTM3MmZjNDQwNDNiMGQwYTNjOWU1MWRlOWJiIiwicHJvZmlsZU5hbWUiOiJFbnRpdHlMbGFtYVNwaXQiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzQ5YmM0ODY4MWFjODA2M2ZjNjJkNDg0MzE5NDM1NjMzZTRjMDJlZGE1MzAwZTA3Zjg0MmYxNjVhY2FmM2FhOTIifX19"
+
+  # 1.15 或更高版本
+
+  BEE:
+    probability: 1
+    name: "蜜蜂"
+    displayName: "&d+ &6[ &6&l蜜蜂 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU4Mzk0OTE5Y2QzMzIxODgzMDk2NDY2ODg4ZjYzMTFjODIwYjViMGM3ODlhNzQ3Yjc5YmY5MDlmZmYxYjViMiJ9fX0="
+
+  # 1.16 或更高版本
+  PIGLIN:
+    probability: 1
+    name: "猪灵"
+    displayName: "&d+ &6[ &6&l猪灵 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0aW1lc3RhbXAiOjE1ODE4OTU1MTM0MjYsInByb2ZpbGVJZCI6ImVkNTNkZDgxNGY5ZDRhM2NiNGViNjUxZGNiYTc3ZTY2IiwicHJvZmlsZU5hbWUiOiJGb3J5eExPTCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2MwYWQzZGRlYmY4OGNlMzk1M2I1NzcyZmRkMDI4OGI2ZjhlZGQ4YTAwMzFjZWVlZTVjZGNkNTk0NDFmMTNmNyJ9fX0="
+
+  STRIDER:
+    probability: 1
+    name: "炽足兽"
+    displayName: "&d+ &6[ &6&l炽足兽 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThhOWFkZjc4MGVjN2RkNDYyNWM5YzA3NzkwNTJlNmExNWE0NTE4NjY2MjM1MTFlNGM4MmU5NjU1NzE0YjNjMSJ9fX0="
+
+  HOGLIN:
+    probability: 1
+    name: "疣猪兽"
+    displayName: "&d+ &6[ &6&l疣猪兽 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWJiOWJjMGYwMWRiZDc2MmEwOGQ5ZTc3YzA4MDY5ZWQ3Yzk1MzY0YWEzMGNhMTA3MjIwODU2MWI3MzBlOGQ3NSJ9fX0="
+
+  ZOGLIN:
+    probability: 1
+    name: "僵尸疣猪兽"
+    displayName: "&d+ &6[ &6&l僵尸疣猪兽 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2M4YzdjNWQwNTU2Y2Q2NjI5NzE2ZTM5MTg4YjIxZTdjMDQ3NzQ3OWYyNDI1ODdiZjE5ZTBiYzc2YjMyMjU1MSJ9fX0="
+
+  PIGLIN_BRUTE:
+    probability: 1
+    name: "猪灵蛮兵"
+    displayName: "&d+ &6[ &6&l猪灵蛮兵 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2UzMDBlOTAyNzM0OWM0OTA3NDk3NDM4YmFjMjllM2E0Yzg3YTg0OGM1MGIzNGMyMTI0MjcyN2I1N2Y0ZTFjZiJ9fX0="
+
+  ZOMBIFIED_PIGLIN:
+    probability: 1
+    name: "僵尸猪灵"
+    displayName: "&d+ &6[ &6&l僵尸猪灵 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2UzMDBlOTAyNzM0OWM0OTA3NDk3NDM4YmFjMjllM2E0Yzg3YTg0OGM1MGIzNGMyMTI0MjcyN2I1N2Y0ZTFjZiJ9fX0="
+
+  # 1.17、1.18 或更高版本
+
+  GOAT:
+    probability: 1
+    name: "山羊"
+    displayName: "&d+ &6[ &6&l山羊 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTY2MjMzNmQ4YWUwOTI0MDdlNThmN2NjODBkMjBmMjBlNzY1MDM1N2E0NTRjZTE2ZTMzMDc2MTlhMDExMDY0OCJ9fX0="
+
+  GLOW_SQUID:
+    probability: 1
+    name: "发光鱿鱼"
+    displayName: "&d+ &6[ &6&l发光鱿鱼 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVlMmI0NmU1MmFjOTJkNDE5YTJkZGJjYzljZGNlN2I0NTFjYjQ4YWU3MzlkODVkNjA3ZGIwNTAyYTAwOGNlMCJ9fX0="
+
+  AXOLOTL:
+    probability: 1
+    name: "美西螈"
+    displayName: "&d+ &6[ &6&l美西螈 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGI5MWIxM2QwYjMzNjA3YTk1ODdlOGJhMTdkODYwMzU2MjVjYjM2MjdjNWRiZWY5Y2YwMGU4YmFlOWYwZjUyYSJ9fX0="
+
+  # 1.19 或更高版本
+
+  ALLAY:
+    probability: 1
+    name: "悦灵"
+    displayName: "&d+ &6[ &6&l悦灵 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTUwMjk0YTE3NDczMTBmMTA0MTI0YzYzNzNjYzYzOWI3MTJiYWE1N2I3ZDkyNjI5N2I2NDUxODhiN2JiOWFiOSJ9fX0="
+
+  FROG:
+    probability: 1
+    name: "青蛙"
+    displayName: "&d+ &6[ &6&l青蛙 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmNhNGE4ZTQ5NDU4MmM2MmFhYTJjOTI0NzRiMTZkNjljZDYzYmFhM2QzZjUwYTRiNjMxZDY1NTljYTBmMzNmNSJ9fX0="
+
+  TADPOLE:
+    probability: 1
+    name: "蝌蚪"
+    displayName: "&d+ &6[ &6&l蝌蚪 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTg3MDM1ZjUzNTIzMzRjMmNiYTZhYzRjNjVjMmI5MDU5NzM5ZDZkMGU4MzljMWRkOThkNzVkMmU3Nzk1Nzg0NyJ9fX0="
+
+  WARDEN:
+    probability: 1
+    name: "坚守者"
+    displayName: "&d+ &6[ &6&l坚守者 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWYwZTQxNmZiYzA0NmMzNDA3NThkMTk2M2YzOWJiODQwY2JiZTYzOTdiMGNjZjkwNjc4NGUwMTNlZGNkMzIzZiJ9fX0="
+
+  # 1.20 或更高版本
+
+  CAMEL:
+    probability: 1
+    name: "骆驼"
+    displayName: "&d+ &6[ &6&l骆驼 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmE0Yzk1YmZhMGI2MTcyMjI1NTM4OTE0MWI1MDVjZjFhMzhiYWQ5YjBlZjU0M2RlNjE5ZjBjYzkyMjFlZDk3NCJ9fX0="
+
+  SNIFFER:
+    probability: 1
+    name: "嗅探兽"
+    displayName: "&d+ &6[ &6&l嗅探兽 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmU1YTgzNDFjNDc4YTEzNDMwMjk4MWU2YTc3NThlYTRlY2ZkOGQ2MmEwZGY0MDY3ODk3ZTc1NTAyZjliMjVkZSJ9fX0="
+
+  # 附加头颅
+  BATMAN:
+    probability: 50
+    name: "百特曼"
+    displayName: "&d+ &6[ &6&l百特曼 &6] &d+"
+    lore:
+      - " "
+      - " &7► &e&l[灵魂之首 : 附加]"
+      - " "
+      - " &7► &f杀手: %rainbowskull_killed_player%"
+      - " &7► &f地点: %rainbowskull_killed_world%"
+      - " &7► &f时间: %rainbowskull_killed_time%"
+    skin: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmY0NzkzNWZlZTExZTVjMGU1ZDI2ZTNkZjA1OGNiZjA2MzRiNDMwMWYyMGVkZDA2YThkYTU2OTc1NjM5YTY2In19fQ=="

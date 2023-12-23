@@ -1,0 +1,161 @@
+#    '||    ||'     |      ..|'''.|  '||'   ..|'''.| '||''|.   ..|''||   '|| '||'  '|' '||''''|  '||''|.   '||''''|  '||''|.
+#     |||  |||     |||    .|'     '   ||  .|'     '   ||   || .|'    ||   '|. '|.  .'   ||  .     ||   ||   ||  .     ||   ||
+#     |'|..'||    |  ||   ||    ....  ||  ||          ||...|' ||      ||   ||  ||  |    ||''|     ||''|'    ||''|     ||    ||
+#     | '|' ||   .''''|.  '|.    ||   ||  '|.      .  ||      '|.     ||    ||| |||     ||        ||   |.   ||        ||    ||
+#    .|. | .||. .|.  .||.  ''|...'|  .||.  ''|....'  .||.      ''|...|'      |   |     .||.....| .||.  '|' .||.....| .||...|'
+
+# 是否启用 %rainbowskull_num_<skull>% 和 %rainbowskull_num_total% 变量
+# 这两个变量分别用于追踪玩家斩首指定生物次数，和玩家总斩首次数
+# 其中，<skull> 为实体类型，亦即 skull.yml:Skulls 下每一个配置节的主键。如 BAT、CHICKEN
+Variable:
+  # 开关，将其设置为 true 以启用。请注意，若您启用，请添加 PlaceHolder-API 插件，这是此模块的依赖
+  # 在这里找到 PlaceHolder-API: https://www.spigotmc.org/resources/placeholderapi.6245/
+  # 此项不开启时，计数将暂停
+  state: false
+  # 可选: YAML (YAML文件) 或 MySQL (MySQL数据库)
+  databaseSetting: YAML
+  # 若选择了 MySQL，您需要配置 MySQL 相关数据
+  # 您需要手动新建一个 rainbowskull 数据库，供本插件使用。您可以参考此处教程: https://wiki.magicpowered.cn/zh/ServerResource/MySQL
+  # 若插件报告无法连接至数据库，但您确信数据库配置正确，且数据库运行正常。请尝试更换一个用户名后再试
+  MySQL:
+    host: localhost
+    port: 3306
+    username: root
+    password: your_password
+    database: rainbowskull
+
+# 世界相关设置
+# 在 Forge+Bukkit 混合端，下界世界可能使用 world/DIM-1
+# 在 Forge+Bukkit 混合端，末地世界可能使用 world/DIM1
+World:
+  # 允许斩首的世界
+  allow:
+    world: true
+    world_nether: true
+    world/DIM1: true
+    world_the_end: true
+    world/DIM-1: true
+  # 世界的额外概率
+  additional:
+    world: 1
+    world_nether: 1
+    world/DIM-1: 1
+    world_the_end: 0
+    world/DIM1: 0
+  # 世界别名
+  alias:
+    world: '&a[主世界]'
+    world_nether: '&c[下界]'
+    world/DIM-1: '&c[下界]'
+    world_the_end: '&d[末地]'
+    world/DIM1: '&d[末地]'
+
+# 为玩家设置 rainbowskull.additional.<groupName> 以让玩家获得额外概率
+# 其中, <groupName> 为下面的键, 在默认例子中, 他是 default
+AdditionalPermission:
+  default: 0
+
+# 设置附魔带来的额外概率, 在 https://www.mcmod.cn/item/list/1-5.html 查看附魔名称
+# 注意, 使用全小写
+AdditionalEnchant:
+  # 抢夺
+  looting:
+    1: 0.1
+    2: 0.5
+    3: 1
+
+# 会被忽略的击杀者, 默认例子中为通用机械的 "怪物磨床"
+BlackList:
+  - "Draconic Evolution Grinder"
+
+# 玩家放置与破坏灵魂之首时的提示消息，仅仅是一个提示消息
+PlaceAndBreak:
+  state: true
+  prefix: "§7[§c彩虹头颅§7]"
+  placeMagicHead: "&7一个灵魂之首被放置, 其元数据已存档"
+  breakMagicHead: "&7一个灵魂之首已掉落, 其元数据已恢复"
+
+# 插件提示消息
+Message:
+  prefix: "§7[§c彩虹头颅§7]"
+  isUnSupportEntity: "&7生物未受到支持: %rainbowskull_check_entity% "
+  isSupportEntity: "&7生物已受到支持: %rainbowskull_check_entity% "
+  isUnSupportWorld: "&7错误, 当前世界未启用灵魂斩首"
+  infoModeSwitched: "&7灵魂之首动态信息提示的位置已切换至: %rainbowskull_info_mode%"
+  checkModeSwitched: "&7受支持的生物检查已设置为: %rainbowskull_check_mode%"
+  beheadModeSwitched: "&7接下来，您将 %rainbowskull_behead_mode% 触发灵魂斩首"
+  relateSkullNull: "&7本次斩首触发了关联斩首, 但由于配置错误, 关联斩首获取失败。请联系服务器管理员, 并告知他们原因: 控制台"
+  errorGetMagicHead: "&7由于您的背包已满, 刚刚的灵魂之首已掉落在您身边"
+  successReceivedMagicHead: "&7您收到了新的灵魂之首, 请查看背包"
+  errorReceivedMagicHead: "&7您收到了新的灵魂之首, 但是由于您的背包已满, 灵魂之首已掉落在您身边"
+
+# 玩家斩首时的提示消息
+Info:
+  chat: "&7[&c彩虹头颅&7] &a灵魂斩首! &7您刚刚击杀的 &c%rainbowskull_killed_name% &7被灵魂斩首!"
+  title: "&a灵魂斩首!"
+  subtitle: "&7击杀 &c%rainbowskull_killed_name% &7触发灵魂斩首!"
+  actionbar: "&7您刚刚击杀的 &c%rainbowskull_killed_name% &7被灵魂斩首!"
+  complete:
+    title: "&6灵魂斩首!"
+    subtitle: "&f击杀 &6%rainbowskull_killed_name% &f触发灵魂斩首!"
+
+# 玩家斩首时的提示相关设置
+InfoTitleSettings:
+  title:
+    fadeIn: 20
+    stay: 60
+    fadeOut: 20
+  subtitle:
+    fadeIn: 20
+    stay: 60
+    fadeOut: 20
+  complete:
+    fadeIn: 20
+    stay: 60
+    fadeOut: 20
+
+
+Behead:
+  # 斩首后的全服广播
+  Broadcast:
+    state: true
+    message:
+      - "&7[&c彩虹头颅&7] &a灵魂斩首! %rainbowskull_killed_world% 的 %rainbowskull_killed_player% 在击杀 %rainbowskull_killed_name% 时触发了灵魂斩首!"
+    # 特殊的全服广播
+    epicMessage:
+      # 白名单，此项为 true 时，包含在 entities 中的生物将触发 epicMessage，否则反之
+      whiteList: true
+      entities:
+        - "ENDER_DRAGON"
+        - "WITHER"
+        - "ENDERMAN"
+      message:
+        - '&e&l&m-+-+-+&r &6&l[&e&l灵魂斩首&6&l] &e&l&m+-+-+-'
+        - ' '
+        - ' &e&l   &f&l杀手: &c%rainbowskull_killed_player%'
+        - ' &e&l   &f&l地点: &c%rainbowskull_killed_world%'
+        - ' &e&l   &f&l生物: &c%rainbowskull_killed_name%'
+        - ' '
+        - '&e&l&m-+-+-+&r &6&l[&e&l灵魂斩首&6&l] &e&l&m+-+-+-'
+
+  # 斩首后执行的命令，执行人为控制台
+  Script:
+    state: false
+    command:
+      - 'say 恭喜 %rainbowskull_killed_player% 在 %rainbowskull_killed_world% 世界斩首了 %rainbowskull_killed_name%'
+    # 特殊的命令
+    epicCommand:
+      # 白名单，此项为 true 时，包含在 entities 中的生物将触发 epicCommand，否则反之
+      whiteList: true
+      entities:
+        - "ENDER_DRAGON"
+        - "WITHER"
+        - "ENDERMAN"
+      command:
+        - 'say &e&l&m-+-+-+&r &6&l[&e&l灵魂斩首&6&l] &e&l&m+-+-+-'
+        - 'say '
+        - 'say &e&l   &f&l杀手: &c%rainbowskull_killed_player%'
+        - 'say &e&l   &f&l地点: &c%rainbowskull_killed_world%'
+        - 'say &e&l   &f&l生物: &c%rainbowskull_killed_name%'
+        - 'say '
+        - 'say &e&l&m-+-+-+&r &6&l[&e&l灵魂斩首&6&l] &e&l&m+-+-+-'

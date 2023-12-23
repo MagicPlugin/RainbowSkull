@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7bd99941-4465-499d-aa6c-39e1fe33d4bc" name="变更" comment="commit" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/RainbowSkull" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/Desktop/LightFall光落/SpigotBuildTools/Spigot/Spigot-API/target/spigot-api-1.18.2-R0.1-SNAPSHOT-shaded.jar!/org/bukkit/plugin/java/JavaPlugin.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/com/magicpowered/rainbowskull/CommandListener.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/magicpowered/rainbowskull/EventListener.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/magicpowered/rainbowskull/FileManager.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/magicpowered/rainbowskull/Mobs.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/magicpowered/rainbowskull/RainbowSkull.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/magicpowered/rainbowskull/SkullData.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/com/magicpowered/rainbowskull/VariableStorage.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/config.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/plugin.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/skull.yml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2WtI8mkrHI04Bqif0xymGOpzZMU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;module&quot;
+    ],
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="7bd99941-4465-499d-aa6c-39e1fe33d4bc" name="变更" comment="" />
+      <created>1697545294150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697545294150</updated>
+      <workItem from="1697545295364" duration="1000" />
+      <workItem from="1697698627344" duration="698000" />
+      <workItem from="1697699598014" duration="31000" />
+      <workItem from="1697699651478" duration="1000" />
+      <workItem from="1697699656079" duration="72000" />
+      <workItem from="1697699731663" duration="14000" />
+      <workItem from="1697699757959" duration="3000" />
+      <workItem from="1697699774256" duration="35000" />
+      <workItem from="1697699881104" duration="4000" />
+      <workItem from="1697699888345" duration="1324000" />
+      <workItem from="1697702141692" duration="10000" />
+      <workItem from="1697702204804" duration="18000" />
+      <workItem from="1697703372884" duration="392000" />
+      <workItem from="1697703841571" duration="1231000" />
+      <workItem from="1697705092328" duration="34000" />
+      <workItem from="1697707133135" duration="3244000" />
+      <workItem from="1697711092545" duration="12135000" />
+      <workItem from="1697992014358" duration="8623000" />
+      <workItem from="1698078405210" duration="624000" />
+      <workItem from="1698148469858" duration="4969000" />
+      <workItem from="1698216100141" duration="12803000" />
+      <workItem from="1698857288347" duration="8000" />
+      <workItem from="1699944775630" duration="3896000" />
+      <workItem from="1700054317904" duration="1000" />
+      <workItem from="1700134391420" duration="2000" />
+      <workItem from="1700561348462" duration="1037000" />
+      <workItem from="1700562406036" duration="26689000" />
+      <workItem from="1700968027809" duration="5473000" />
+      <workItem from="1701152591357" duration="751000" />
+      <workItem from="1702258098743" duration="4457000" />
+      <workItem from="1702297894894" duration="1282000" />
+      <workItem from="1702456013719" duration="10000" />
+      <workItem from="1702460820559" duration="190000" />
+      <workItem from="1702469380796" duration="839000" />
+      <workItem from="1702488235232" duration="222000" />
+      <workItem from="1702545501443" duration="6000" />
+      <workItem from="1702746543823" duration="659000" />
+      <workItem from="1702809210152" duration="10431000" />
+      <workItem from="1702885030711" duration="1147000" />
+      <workItem from="1702922226616" duration="17000" />
+      <workItem from="1702972107154" duration="5390000" />
+      <workItem from="1703234085742" duration="2784000" />
+      <workItem from="1703301516490" duration="63000" />
+      <workItem from="1703301810976" duration="84000" />
+      <workItem from="1703301924861" duration="326000" />
+      <workItem from="1703302253965" duration="31000" />
+      <workItem from="1703302308742" duration="153000" />
+      <workItem from="1703302526045" duration="596000" />
+    </task>
+    <task id="LOCAL-00001" summary="1. 添加了 behead 开关&#10;2. 添加了 name 配置节&#10;3. 修正了本插件内概念 &quot;自定义头颅&quot; 和 &quot;触发生物&quot;">
+      <created>1702263922169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702263922169</updated>
+    </task>
+    <task id="LOCAL-00002" summary="修正已知错误">
+      <created>1703297751667</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703297751667</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修正已知错误">
+      <created>1703299630188</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703299630188</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1. 添加了 behead 开关&#10;2. 添加了 name 配置节&#10;3. 修正了本插件内概念 &quot;自定义头颅&quot; 和 &quot;触发生物&quot;" />
+    <MESSAGE value="修正已知错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正已知错误" />
+  </component>
+</project>
